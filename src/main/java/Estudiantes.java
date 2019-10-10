@@ -7,9 +7,16 @@ public class Estudiantes {
 
     public Estudiantes(int matricula) {
         this.matricula = 0;
-        this.nombre = " ";
-        this.apellido = " ";
-        this.telefono = " ";
+        this.nombre = "";
+        this.apellido = "";
+        this.telefono = "";
+    }
+
+    public Estudiantes(int matricula, String nombre, String apellido, String telefono) {
+        this.matricula = matricula;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.telefono = telefono;
     }
 
     public int getMatricula() {
