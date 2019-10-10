@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>C.R.U.D Básico</title>
+    <title>C.R.U.D B&aacutesico</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
         <a class="navbar-brand" href="#">Create, Read, Update y Delete</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,17 +31,11 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="/">Inicio
-                        <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/Agregar">Agregar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/Modificar/0">Modificar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/Eliminar/0">Eliminar</a>
+                    <a class="nav-link" href="/Agregar">Agregar (Create)</a>
+                        <span class="sr-only">(current)</span>
                 </li>
             </ul>
         </div>
@@ -58,8 +52,8 @@
     <form method="post" action="/AgregarEst">
 
         <div class="form-group">
-            <label for="matricula">Matricula</label>
-            <input type="text" class="form-control" id="matricula" name="matricula" placeholder="Matricula" required>
+            <label for="matricula">Matr&iacutecula</label>
+            <input type="number" class="form-control" id="matricula" name="matricula" placeholder="Matricula" required>
         </div>
 
         <div class="form-group">
@@ -73,8 +67,8 @@
         </div>
 
         <div class="form-group">
-            <label for="telefono">Teléfono</label>
-            <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Telefono" required>
+            <label for="telefono">Tel&eacutefono</label>
+            <input type="text" class="form-control" id="telefono" name="telefono" placeholder="000-000-000" required>
         </div>
 
         <input type="submit" class="btn btn-primary" value="Agregar estudiante">
