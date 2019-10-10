@@ -43,12 +43,10 @@
 
 <!-- Page Content -->
 <div class="container">
-    <header class="jumbotron my-4 text-center">
-        <h1 class="display-3">Mostrar Estudiante</h1>
-    </header>
+
     <hr>
     <div class="card">
-        <div class="text-center"><h3><span class="color: alert-primary">Mostrando a ${Est.nombre}</span></h3></div>
+        <div class="text-center"><h3>Mostrando a ${Est.nombre} ${Est.apellido}</h3></div>
         <div class="card-body">
             <ul class="list-group">
                 <li class="list-group-item"><span class="font-weight-bold">Matricula: </span>${Est.matricula?string["0"]}</span></li>

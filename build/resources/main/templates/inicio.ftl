@@ -53,8 +53,7 @@
       </header>
 
       <!-- Page Features -->
-        <div class="bg-primary text-center text-white">
-            <#if listaSize>
+        <div class="text-center">
                 <table class="table table-striped table-hover">
                     <thead class="thead-dark">
                     <tr>
@@ -68,6 +67,7 @@
                     </tr>
                     </thead>
                     <tbody>
+                        <#if listaSize>
                         <#assign i = 0>
 
                         <#list listaStudents as Est>
@@ -76,9 +76,9 @@
                             <td>${Est.nombre}</td>
                             <td>${Est.apellido}</td>
                             <td>${Est.telefono}</td>
-                            <td><a href="/VisualizarEst/${i}"  class="btn btn-light" role="button">Ver </a></td>
-                            <td><a href="/Modificar/${i}" class="btn btn-success" role="button">Editar </a></td>
-                            <td><a href="/Eliminar/${i}"  class="btn btn-danger" role="button">Eliminar </a></td>
+                            <td><a href="/VisualizarEst/${i}"  class="btn btn-info" role="button">Ver</a></td>
+                            <td><a href="/Modificar/${i}" class="btn btn-success" role="button">Editar</a></td>
+                            <td><a href="/Eliminar/${i}"  class="btn btn-danger" role="button">Eliminar</a></td>
                         </tr>
                             <#assign i++>
                         </#list>

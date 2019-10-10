@@ -45,9 +45,6 @@
 <!-- Page Content -->
 <div class="container">
 
-    <header class="jumbotron my-4 text-center">
-        <h1 class="display-3">Agregar un estudiante</h1>
-    </header>
     <hr>
     <form method="post" action="/AgregarEst">
 

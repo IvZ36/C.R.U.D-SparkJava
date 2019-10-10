@@ -43,9 +43,7 @@
 
 <!-- Page Content -->
 <div class="container">
-    <header class="jumbotron my-4 text-center">
-        <h1 class="display-3">Mostrar Estudiante</h1>
-    </header>
+
     <hr>
     <div class="card">
         <div class="text-center"><h3>Mostrando a ${Est.nombre} ${Est.apellido}</h3></div>
