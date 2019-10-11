@@ -46,10 +46,10 @@
     <div class="container">
 
       <!-- Jumbotron Header -->
-      <header class="jumbotron my-4 text-center">
+      <header class="jumbotron my-4 text-center jumbotron-fluid">
         <h1 class="display-3">C.R.U.D de Estudiantes</h1>
         <hr class="my-4">
-        <p>Proyecto creado por Iv&aacuten Rodr&iacuteguez para la clase de Programaci&oacuten Web</p>
+        <p>Proyecto creado por <b>Iv&aacuten Rodr&iacuteguez</b> para la clase de Programaci&oacuten Web</p>
       </header>
 
       <!-- Page Features -->
@@ -61,9 +61,9 @@
                         <th>Nombre</th>
                         <th>Apellido</th>
                         <th>Tel&eacutefono</th>
-                        <th> </th>
-                        <th> </th>
-                        <th> </th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -76,9 +76,9 @@
                             <td>${Est.nombre}</td>
                             <td>${Est.apellido}</td>
                             <td>${Est.telefono}</td>
-                            <td><a href="/VisualizarEst/${i}"  class="btn btn-info" role="button">Ver</a></td>
-                            <td><a href="/Modificar/${i}" class="btn btn-success" role="button">Editar</a></td>
-                            <td><a href="/Eliminar/${i}"  class="btn btn-danger" role="button">Eliminar</a></td>
+                            <td><a href="/VisualizarEst/${i}"  class="btn btn-info" role="button">Ver (Read)</a></td>
+                            <td><a href="/Modificar/${i}" class="btn btn-success" role="button">Editar (Update)</a></td>
+                            <td><a href="/Eliminar/${i}"  class="btn btn-danger" role="button">Eliminar (Delete)</a></td>
                         </tr>
                             <#assign i++>
                         </#list>

@@ -46,10 +46,10 @@
     <div class="container">
 
       <!-- Jumbotron Header -->
-      <header class="jumbotron my-4 text-center">
+      <header class="jumbotron my-4 text-center jumbotron-fluid">
         <h1 class="display-3">C.R.U.D de Estudiantes</h1>
         <hr class="my-4">
-        <p>Proyecto creado por Iv&aacuten Rodr&iacuteguez para la clase de Programaci&oacuten Web</p>
+        <p>Proyecto creado por <b>Iv&aacuten Rodr&iacuteguez</b> para la clase de Programaci&oacuten Web</p>
       </header>
 
       <!-- Page Features -->
@@ -61,9 +61,9 @@
                         <th>Nombre</th>
                         <th>Apellido</th>
                         <th>Tel&eacutefono</th>
-                        <th> </th>
-                        <th> </th>
-                        <th> </th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
                     </tr>
                     </thead>
                     <tbody>
