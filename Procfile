@@ -1,1 +1,1 @@
-web: chmod +x ./build/classes/java/main/Main.class
+web: chmod +x ./src/main/java/Main.java
