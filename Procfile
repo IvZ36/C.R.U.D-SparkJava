@@ -1,1 +1,1 @@
-web: ./build/install/crud/bin/crud
+web: ./build/classes/java/main/Main.class
