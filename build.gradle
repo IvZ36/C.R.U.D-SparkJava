@@ -3,6 +3,8 @@ plugins {
     id 'application'
 }
 
+mainClassName = '...'
+
 group 'crudbasico'
 version '1.0-SNAPSHOT'
 
