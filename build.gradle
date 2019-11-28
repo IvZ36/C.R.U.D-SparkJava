@@ -3,7 +3,9 @@ plugins {
     id 'application'
 }
 
-mainClassName = '...'
+mainClassName = "Main"
+archivesBaseName = "crud"
+applicationName = "crud"
 
 group 'crudbasico'
 version '1.0'
@@ -22,6 +24,8 @@ dependencies {
     compile 'org.freemarker:freemarker:2.3.26-incubating'
     compile group: 'org.slf4j',name: 'slf4j-simple', version: '1.7.21'
 }
+
+defaultTasks = ['clean']
 
 task stage(dependsOn: ['build', 'clean'])
 build.mustRunAfter clean

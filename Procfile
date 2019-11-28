@@ -1,1 +1,1 @@
-web: java -jar target/crudbasicoivan-1.0.jar
+web: java ./build/install/crud/bin/crud

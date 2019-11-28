@@ -18,6 +18,19 @@ public class Main {
         // Donde se encuentran las plantillas y CSS
         staticFiles.location("/templates");
 
+        /// -------------------------------------- Practica 6---------------------------
+        ProcessBuilder process = new ProcessBuilder();
+        Integer port;
+        if (process.environment().get("PORT") != null) {
+            port = Integer.parseInt(process.environment().get("PORT"));
+        } else {
+            port = 4567;
+        }
+        Spark.port(port);
+
+        ///-----------------------------------------------------------------------------
+
+
         // Dejando solo el "/" vacio, va a la carpeta de resources donde se encuentra las plantillas
         final Configuration configuration = new Configuration(new Version(2, 3, 0));
         configuration.setClassForTemplateLoading(Main.class, "/");
