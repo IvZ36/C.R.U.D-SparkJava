@@ -1,1 +1,1 @@
-web: java -jar build/libs/crudbasicoivan-1.0.jar
+web: java -jar target/crudbasicoivan-1.0.jar
