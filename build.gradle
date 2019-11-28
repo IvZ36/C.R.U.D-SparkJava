@@ -26,8 +26,7 @@ dependencies {
 }
 
 defaultTasks = ['clean']
-
-task stage(dependsOn: ['build', 'clean'])
+task stage(dependsOn: ['build', 'clean', 'installApp'])
 build.mustRunAfter clean
 
 task copyToLib(type: Copy) {

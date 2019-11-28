@@ -1,1 +1,1 @@
-web: java ./build/install/crud/bin/crud
+web: ./build/install/crud/bin/crud
