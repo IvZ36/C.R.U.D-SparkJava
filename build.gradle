@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'com.github.johnrengelman.shadow' version '4.0.4'
 }
 
 group 'crudbasico'
@@ -23,11 +24,11 @@ dependencies {
 }
 
 shadowJar {
-    baseName = 'crud'
+    baseName = 'C.R.U.D-SparkJava'
     classifier = null
     version = null
 }
 
 task stage {
-    dependsOn shadowJar
+    dependsOn installDist
 }
