@@ -3,15 +3,12 @@ plugins {
     id 'application'
 }
 
-mainClassName = "Main"
-archivesBaseName = "crud"
-applicationName = "crud"
-
 group 'crudbasico'
-version '1.0'
+version '1.0-SNAPSHOT'
 
 
 sourceCompatibility = 1.8
+mainClassName = "Main"
 
 repositories {
     mavenCentral()
@@ -25,13 +22,12 @@ dependencies {
     compile group: 'org.slf4j',name: 'slf4j-simple', version: '1.7.21'
 }
 
-defaultTasks = ['clean']
-task stage(dependsOn: ['build', 'clean'])
-build.mustRunAfter clean
-
-task copyToLib(type: Copy) {
-    into "$buildDir/libs"
-    from(configurations.compile)
+shadowJar {
+    baseName = 'crud'
+    classifier = null
+    version = null
 }
 
-stage.dependsOn(copyToLib)
+task stage {
+    dependsOn shadowJar
+}
