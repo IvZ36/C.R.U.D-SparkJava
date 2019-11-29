@@ -1,1 +1,1 @@
-web: java -jar build/libs/sparkjava_demo.jar
+web: java -jar build/libs/crud.jar
