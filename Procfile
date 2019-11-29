@@ -1,1 +1,1 @@
-web: chmod +x ./src/main/java/Main.java
+web: sh build/install/sparkjava_demo/bin/sparkjava_demo
